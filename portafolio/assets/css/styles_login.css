@@ -1,0 +1,166 @@
+/*******************************
+    ESTILO DE TIPOGRAFÍA
+********************************/
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Sintony-Regular';
+    src: url('../fonts/sintony/Sintony-Regular.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*********************************
+    Fuente para parrafos/txt
+**********************************/
+p {
+    font-family: 'Sintony-Regular';
+    font-size: 11px;
+}
+
+h1 {
+    font-family: 'Poppins-Bold';
+}
+
+.modal-title {
+    font-family: 'Poppins-Bold';
+    font-size: 17px;
+}
+
+.modal-body {
+    font-family: 'Sintony-Regular';
+    font-size: 13px;
+}
+
+.modal-bodySpan {
+    font-family: 'Poppins-Bold';
+    font-size: 15px;
+}
+
+/**************************************************
+    Fuente para placeholders del form y sombra
+***************************************************/
+input::placeholder {
+    font-family: 'Sintony-Regular';
+    font-size: 13px;
+}
+
+textarea:focus,
+input:focus,
+input[type]:focus {
+    border: 2px solid;
+    border-color: #707070;
+    box-shadow: 0px 0px 0px #707070;
+    outline: 0 none;
+}
+
+/*****************************
+    Estilo para la vista
+******************************/
+body {
+    /* Estilos para central el formulario */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+
+    /* Imagen de fondo */
+    background-image: url('../img/bg-waves.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+/********************************************
+Aspecto para el fondo del Formulario
+*********************************************/
+.background-formLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px 50px;
+
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-radius: 10px;
+    border-color: #f7ede2;
+    background-color: #FFF;
+    box-shadow: -5px 5px 0 #f6bd60;
+}
+
+/***************************************
+    Imagen-logo para login y subs
+****************************************/
+#img-login {
+    width: 200px;
+}
+
+/***********************************************
+    Estilos de Botones para Login y Subs
+************************************************/
+.button-login {
+    font-family: 'Poppins-Bold';
+    font-size: 15px;
+    color: #000;
+
+    background: transparent;
+    border: 3px solid;
+    border-radius: 20px;
+    border-color: #f6bd60;
+
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.button-login:hover {
+    background-color: #f7ede2;
+}
+
+.button-forgetpass {
+    font-family: 'Sintony-Regular';
+    font-size: 11px;
+    border: 0 solid;
+    background-color: #FFF;
+}
+
+.button-close {
+    font-family: 'Sintony-Regular';
+    font-size: 15px;
+    border: 0 solid;
+    background-color: #FFF;
+    text-decoration: underline;
+}
+
+/************************************************
+    Input password (estilos y modificaciones)
+*************************************************/
+#input-pass {
+    display: flex;
+}
+
+#input-pass input {
+    border-right: 0 solid;
+}
+
+#show-password {
+    border: 0 solid;
+    background-color: #CCC;
+    outline: 0 none;
+    box-shadow: none;
+    color: #FFF;
+}
